@@ -6,7 +6,12 @@ fn main() {
     println!("We have a float value f of :: {}", f);
     println!("We also have a bool whose value is :: {}", b);
 
-    x = 60;
-    println!("The NEW value of x is {}", x)
+    x = 12;
+    println!("The NEW value of x is {}", x);
 
+    if x > 15 {
+        println!("    - - The value of x is greater than 15");
+    } else if !b {
+        println!("    - - We're not Rusty!");
+    }
 }
