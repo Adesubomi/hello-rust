@@ -1,17 +1,18 @@
 fn main() {
-    let mut x:u64 = 45;
-    let f = 6.7;
-    let b:bool = false;
-    println!("The value of x is {}", x);
-    println!("We have a float value f of :: {}", f);
-    println!("We also have a bool whose value is :: {}", b);
 
-    x = 12;
-    println!("The NEW value of x is {}", x);
+    let mut n:u32 = 0;
 
-    if x > 15 {
-        println!("    - - The value of x is greater than 15");
-    } else if !b {
-        println!("    - - We're not Rusty!");
+    loop {
+        n += 1;
+
+        if n == 7 {
+            continue;
+        }
+
+        if n > 10 {
+            break;
+        }
+
+        println!("The value of n is {}", n)
     }
 }
