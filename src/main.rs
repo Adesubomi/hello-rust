@@ -1,11 +1,11 @@
 fn main() {
+    // let numbers = 30..51;
 
-    let mut n = 1;
-
-    while n <= 50 {
-        if n % 5 == 0 {
-            println!("n is {}", n);
-        }
-        n += 1;
+    let animals = vec!["Rabbit", "Dog", "Cat"];
+    for (i, name) in animals.iter().enumerate() {
+//        if i % 5 == 0 {
+//            println!("The number is {}", i);
+//        }
+        println!("The animal name is {}: {}", i, name)
     }
 }
